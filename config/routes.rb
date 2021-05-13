@@ -6,11 +6,11 @@ Rails.application.routes.draw do
 
   # いいね機能
   resource :favorites, only: [:create, :destroy]
-  
+
   # コメントの作成、削除
   resources :post_comments, only: [:create, :destroy]
  end
-　# マイページ
- resources :users, only: [:show]
+ # マイページ
+ resources :users, only: [:show, :edit]
 
 end
