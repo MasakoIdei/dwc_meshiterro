@@ -10,5 +10,7 @@ Rails.application.routes.draw do
   # コメントの作成、削除
   resources :post_comments, only: [:create, :destroy]
  end
+　# マイページ
+ resources :users, only: [:show]
 
 end
